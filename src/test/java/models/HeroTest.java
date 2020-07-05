@@ -41,4 +41,5 @@ public class HeroTest {
         assertTrue(Hero.all().contains(hero));
         assertTrue(Hero.all().contains(otherHero));
     }
+
 }

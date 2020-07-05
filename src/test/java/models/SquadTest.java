@@ -21,4 +21,10 @@ public class SquadTest {
         Squad squad =  new Squad(5, "Squad 1","Avengers Assemble");
         assertEquals("Squad 1", squad.getName());
     }
+
+    @Test
+    public void savesCause(){
+        Squad squad =  new Squad(5, "Squad 1","Avengers Assemble");
+        assertEquals("Avengers Assemble", squad.getCause());
+    }
 }

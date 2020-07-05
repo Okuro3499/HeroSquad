@@ -1,7 +1,15 @@
 package models;
 
 public class Hero {
-    public Hero(String name, int age, String special_power, String weakness) {
 
+    private final String name;
+
+    public Hero(String name, int age, String special_power, String weakness) {
+        this.name =name;
+
+    }
+
+    public String getName() {
+        return name;
     }
 }

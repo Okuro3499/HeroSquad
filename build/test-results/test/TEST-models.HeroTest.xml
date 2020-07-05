@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="models.HeroTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-07-05T11:00:05" hostname="gideon-HP-EliteBook-Folio-9480m" time="0.003">
+<testsuite name="models.HeroTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-07-05T11:06:41" hostname="gideon-HP-EliteBook-Folio-9480m" time="0.003">
   <properties/>
-  <testcase name="createsInstanceOfHero" classname="models.HeroTest" time="0.003"/>
+  <testcase name="savesName" classname="models.HeroTest" time="0.002"/>
+  <testcase name="createsInstanceOfHero" classname="models.HeroTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

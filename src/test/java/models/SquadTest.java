@@ -35,4 +35,10 @@ public class SquadTest {
         assertTrue(Squad.all().contains(squad));
         assertTrue(Squad.all().contains(squad2));
     }
+
+    @Test
+    public void clear_EmptiesAllSquadsFromList_0() {
+        Squad.clear();
+        assertEquals(Squad.all().size(), 0);
+    }
 }

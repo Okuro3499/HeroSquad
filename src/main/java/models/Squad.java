@@ -20,6 +20,10 @@ public class Squad {
         return instances;
     }
 
+    public static void clear() {
+        instances.clear();
+    }
+
     public int getMax_size() {
         return max_size;
     }

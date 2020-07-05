@@ -47,4 +47,11 @@ public class HeroTest {
         Hero.clear();
         assertEquals(Hero.all().size(),0);
     }
+
+    @Test
+    public void getId_heroInstantiateWithAnId_1() {
+        Hero.clear();
+        Hero hero = new Hero("Storm",26,"Weather modification","Emotionally unstable");
+        assertEquals(1, hero.getId());
+    }
 }

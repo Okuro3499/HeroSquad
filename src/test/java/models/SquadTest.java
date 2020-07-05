@@ -41,4 +41,11 @@ public class SquadTest {
         Squad.clear();
         assertEquals(Squad.all().size(), 0);
     }
+
+    @Test
+    public void squadInstantiatesWithId() {
+        Squad.clear();
+        Squad squad = new Squad(5, "Squad 1", "Avengers Assemble");
+        assertEquals(1, squad.getId());
+    }
 }

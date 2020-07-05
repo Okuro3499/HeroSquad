@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="models.SquadTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-07-05T13:34:54" hostname="gideon-HP-EliteBook-Folio-9480m" time="0.004">
+<testsuite name="models.SquadTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-07-05T13:42:45" hostname="gideon-HP-EliteBook-Folio-9480m" time="0.005">
   <properties/>
-  <testcase name="clear_EmptiesAllSquadsFromList_0" classname="models.SquadTest" time="0.001"/>
+  <testcase name="squadInstantiatesWithId" classname="models.SquadTest" time="0.002"/>
+  <testcase name="clear_EmptiesAllSquadsFromList_0" classname="models.SquadTest" time="0.0"/>
   <testcase name="all_returnsAllInstancesOfSquad" classname="models.SquadTest" time="0.0"/>
-  <testcase name="creates_instanceOfSquad" classname="models.SquadTest" time="0.001"/>
+  <testcase name="creates_instanceOfSquad" classname="models.SquadTest" time="0.0"/>
   <testcase name="saves_maxSize_5" classname="models.SquadTest" time="0.0"/>
   <testcase name="saves_squadName_squad1" classname="models.SquadTest" time="0.0"/>
   <testcase name="savesCause" classname="models.SquadTest" time="0.0"/>

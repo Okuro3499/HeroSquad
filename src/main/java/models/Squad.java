@@ -8,12 +8,14 @@ public class Squad {
     private String name;
     private String cause;
     private static List<Squad> instances = new ArrayList<Squad>();
+    private int id;
 
     public Squad(int max_size, String name, String cause) {
         this.max_size = max_size;
         this.name = name;
         this.cause = cause;
         instances.add(this);
+        id = instances.size();
     }
 
     public static List<Squad> all() {
@@ -34,5 +36,9 @@ public class Squad {
 
     public String getCause() {
         return cause;
+    }
+
+    public int getId() {
+        return id;
     }
 }

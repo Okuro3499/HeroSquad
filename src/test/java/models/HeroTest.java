@@ -61,4 +61,11 @@ public class HeroTest {
         Hero hero = new Hero("Storm",26,"Weather modification","Emotionally unstable");
         assertEquals(Hero.find(hero.getId()),hero);
     }
+
+    @Test
+    public void findHeroByName() {
+        Hero.clear();
+        Hero hero = new Hero("Storm",26,"Weather modification","Emotionally unstable");
+        assertTrue(Hero.findHeroByName("Storm"));
+    }
 }

@@ -62,4 +62,12 @@ public class SquadTest {
         Squad squad = new Squad(5, "Squad 1", "Avengers Assemble");
         assertEquals(0, squad.getHeroes().size());
     }
+
+    @Test
+    public void addsHeroesToList_true() {
+        Squad squad = new Squad(5, "Squad 1", "Avengers Assemble");
+        Hero hero =  new Hero("Sub-Zero",30,"Freeze breath","Heat");
+        squad.addHero(hero);
+        assertTrue(squad.getHeroes().contains(hero));
+    }
 }

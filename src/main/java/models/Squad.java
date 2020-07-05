@@ -51,4 +51,8 @@ public class Squad {
     public List<Hero> getHeroes() {
         return heroes;
     }
+
+    public void addHero(Hero hero) {
+        heroes.add(hero);
+    }
 }

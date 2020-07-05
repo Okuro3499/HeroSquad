@@ -54,4 +54,11 @@ public class HeroTest {
         Hero hero = new Hero("Storm",26,"Weather modification","Emotionally unstable");
         assertEquals(1, hero.getId());
     }
+
+    @Test
+    public void find_returnsCategoryWithSameId_secondCategory() {
+        Hero.clear();
+        Hero hero = new Hero("Storm",26,"Weather modification","Emotionally unstable");
+        assertEquals(Hero.find(hero.getId()),hero);
+    }
 }

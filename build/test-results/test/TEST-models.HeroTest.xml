@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="models.HeroTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-07-05T12:30:39" hostname="gideon-HP-EliteBook-Folio-9480m" time="0.005">
+<testsuite name="models.HeroTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-07-05T12:38:53" hostname="gideon-HP-EliteBook-Folio-9480m" time="0.008">
   <properties/>
-  <testcase name="getId_heroInstantiateWithAnId_1" classname="models.HeroTest" time="0.001"/>
+  <testcase name="getId_heroInstantiateWithAnId_1" classname="models.HeroTest" time="0.002"/>
   <testcase name="savesAge" classname="models.HeroTest" time="0.0"/>
   <testcase name="saveWeakness" classname="models.HeroTest" time="0.0"/>
   <testcase name="all_ReturnsAll_InstancesOfHero" classname="models.HeroTest" time="0.0"/>
   <testcase name="savesName" classname="models.HeroTest" time="0.0"/>
   <testcase name="clear_EmptiesAllCategoriesFromList_0" classname="models.HeroTest" time="0.0"/>
-  <testcase name="savesSpecialPower" classname="models.HeroTest" time="0.0"/>
+  <testcase name="savesSpecialPower" classname="models.HeroTest" time="0.001"/>
   <testcase name="createsInstanceOfHero" classname="models.HeroTest" time="0.0"/>
+  <testcase name="find_returnsCategoryWithSameId_secondCategory" classname="models.HeroTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

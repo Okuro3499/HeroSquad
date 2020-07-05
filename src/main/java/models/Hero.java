@@ -30,6 +30,14 @@ public class Hero {
         instances.clear();
     }
 
+    public static Hero find(int id) {
+        try{
+            return instances.get(id-1);
+        } catch (IndexOutOfBoundsException exception) {
+            return null;
+        }
+    }
+
     public String getName() {
         return name;
     }

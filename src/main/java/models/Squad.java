@@ -26,6 +26,10 @@ public class Squad {
         instances.clear();
     }
 
+    public static Squad find(int id) {
+        return instances.get(id-1);
+    }
+
     public int getMax_size() {
         return max_size;
     }

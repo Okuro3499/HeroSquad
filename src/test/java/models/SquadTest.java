@@ -48,4 +48,11 @@ public class SquadTest {
         Squad squad = new Squad(5, "Squad 1", "Avengers Assemble");
         assertEquals(1, squad.getId());
     }
+
+    @Test
+    public void findSquadById(){
+        Squad.clear();
+        Squad squad = new Squad(5, "Squad 1", "Avengers Assemble");
+        assertEquals(Squad.find(squad.getId()), squad);
+    }
 }

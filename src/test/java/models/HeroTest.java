@@ -21,4 +21,10 @@ public class HeroTest {
         Hero hero = new Hero("Storm",26,"Weather modification","Emotionally unstable");
         assertEquals(26, hero.getAge());
     }
+
+    @Test
+    public void savesSpecialPower(){
+        Hero hero = new Hero("Storm",26,"Weather modification","Emotionally unstable");
+        assertEquals("Weather modification", hero.getSpecial_Power());
+    }
 }

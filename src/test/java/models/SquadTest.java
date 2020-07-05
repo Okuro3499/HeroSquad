@@ -10,4 +10,9 @@ public class SquadTest {
         assertTrue(squad instanceof Squad);
     }
 
+    @Test
+    public void saves_maxSize_5(){
+        Squad squad =  new Squad(5, "Squad 1","Avengers Assemble");
+        assertEquals(5, squad.getMax_size());
+    }
 }

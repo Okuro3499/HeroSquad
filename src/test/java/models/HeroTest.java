@@ -42,4 +42,9 @@ public class HeroTest {
         assertTrue(Hero.all().contains(otherHero));
     }
 
+    @Test
+    public void clear_EmptiesAllCategoriesFromList_0() {
+        Hero.clear();
+        assertEquals(Hero.all().size(),0);
+    }
 }

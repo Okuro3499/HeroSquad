@@ -27,4 +27,12 @@ public class SquadTest {
         Squad squad =  new Squad(5, "Squad 1","Avengers Assemble");
         assertEquals("Avengers Assemble", squad.getCause());
     }
+
+    @Test
+    public void all_returnsAllInstancesOfSquad() {
+        Squad squad =  new Squad(5, "Squad 1","Avengers Assemble");
+        Squad squad2 =  new Squad(4, "Squad 3","For Asgard");
+        assertTrue(Squad.all().contains(squad));
+        assertTrue(Squad.all().contains(squad2));
+    }
 }

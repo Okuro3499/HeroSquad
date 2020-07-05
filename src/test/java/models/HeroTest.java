@@ -27,4 +27,10 @@ public class HeroTest {
         Hero hero = new Hero("Storm",26,"Weather modification","Emotionally unstable");
         assertEquals("Weather modification", hero.getSpecial_Power());
     }
+
+    @Test
+    public void saveWeakness() {
+        Hero hero = new Hero("Storm",26,"Weather modification","Emotionally unstable");
+        assertEquals("Emotionally unstable", hero.getWeakness());
+    }
 }

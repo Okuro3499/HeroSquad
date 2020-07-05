@@ -33,4 +33,12 @@ public class HeroTest {
         Hero hero = new Hero("Storm",26,"Weather modification","Emotionally unstable");
         assertEquals("Emotionally unstable", hero.getWeakness());
     }
+
+    @Test
+    public void all_ReturnsAll_InstancesOfHero(){
+        Hero hero = new Hero("Storm",26,"Weather modification","Emotionally unstable");
+        Hero otherHero = new Hero("Jean",23,"Telepathy","Mortal body");
+        assertTrue(Hero.all().contains(hero));
+        assertTrue(Hero.all().contains(otherHero));
+    }
 }

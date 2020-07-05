@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="models.HeroTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-07-05T11:19:03" hostname="gideon-HP-EliteBook-Folio-9480m" time="0.004">
+<testsuite name="models.HeroTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-07-05T11:41:01" hostname="gideon-HP-EliteBook-Folio-9480m" time="0.022">
   <properties/>
-  <testcase name="savesAge" classname="models.HeroTest" time="0.002"/>
-  <testcase name="saveWeakness" classname="models.HeroTest" time="0.001"/>
-  <testcase name="savesName" classname="models.HeroTest" time="0.0"/>
+  <testcase name="savesAge" classname="models.HeroTest" time="0.004"/>
+  <testcase name="saveWeakness" classname="models.HeroTest" time="0.008"/>
+  <testcase name="all_ReturnsAll_InstancesOfHero" classname="models.HeroTest" time="0.0"/>
+  <testcase name="savesName" classname="models.HeroTest" time="0.004"/>
   <testcase name="savesSpecialPower" classname="models.HeroTest" time="0.0"/>
-  <testcase name="createsInstanceOfHero" classname="models.HeroTest" time="0.0"/>
+  <testcase name="createsInstanceOfHero" classname="models.HeroTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

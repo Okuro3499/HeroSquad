@@ -1,0 +1,35 @@
+{{#partial "content"}}
+    {{#if squad}}
+        <h3>Your Squads</h3>
+        <table>
+            <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Squad name</th>
+                <th scope="col">Maximum Size</th>
+                <th scope="col">Cause</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{#each squad}}
+                <tr>
+                    <th scope="row">{{id}}</th>
+                    <td>{{squadName}}</td>
+                    <td>{{maxSize}}</td>
+                    <td>{{cause}}</td>
+
+                    <td><button class="btn btn-info"><a href="Squad/{{id}}/hero/new">Add Hero</a></button></td>
+                </tr>
+            {{/each}}
+            </tbody>
+        </table>
+        <div>
+            <button class="btn btn-block"><a href="/squad-form">Add Squad</a></button>
+        </div>
+    {{else}}
+        <div class="alert alert-warning"></div>
+        <p>No Squad created</p>
+    {{/if}}
+{{/partial}}
+
+{{> layout.hbs}}

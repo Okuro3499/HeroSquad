@@ -1,0 +1,18 @@
+{{#partial "content"}}
+<div class="content">
+    <p>"Heroes aren't Born. They're Built."</p>
+
+    <button class="btn btn-success"><a href="/squadform">BUILD SQUAD</a></button>
+</div>
+    {{#if squads}}
+        {{#each squads}}
+            <p>Squad Available:</p>
+            <p>{{content}} <a href="/squad/{{id}}"></a></p>
+        {{/each}}
+    {{else}}
+        <p>No Squad</p>
+    {{/if}}
+
+{{/partial}}
+
+{{> layout.hbs}}

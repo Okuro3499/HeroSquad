@@ -1,0 +1,24 @@
+{{#partial "content"}}
+    {{#if hero}}
+        {{#each hero}}
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{name}}</h5>
+                    <h6 class="card-subtitle mb-2">Age: {{age}}</h6>
+                    <p class="card-text">Special Power: {{special_power}}</p>
+                    <p class="card-text">Weakness: {{weakness}}</p>
+                    {{#if squads}}
+                    <p class="card-text">Squad Name {{squadName}}</p>
+                    {{/if}}
+                    <hr>
+                    <a href="/hero/{{id}}/delete" class="card-link">DELETE</a>
+                </div>
+            </div>
+        {{/each}}
+    {{else}}
+        <div class="alert alert-info">
+            <p>No heroes</p>
+            <p><a href="/heroform">Add Hero</a></p>
+        </div>
+    {{/if}}
+{{/partial}}

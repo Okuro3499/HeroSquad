@@ -63,13 +63,6 @@ public class HeroTest {
     }
 
     @Test
-    public void findHeroByName() {
-        Hero.clear();
-        Hero hero = new Hero("Storm",26,"Weather modification","Emotionally unstable");
-        assertTrue(Hero.findHeroByName("Storm"));
-    }
-
-    @Test
     public void find_returnsNullWhenNoTaskFound_null(){
         assertTrue(Hero.find(1000) == null);
     }

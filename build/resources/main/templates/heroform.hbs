@@ -1,0 +1,26 @@
+{{#partial "content"}}
+    <h2>Add Heroes to squad</h2>
+
+    <form action="/heroes" method="post">
+        <div class="form-group">
+            <label for="name">Hero name</label>
+            <input id="name" name="name" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+            <label for="age">Age</label>
+            <input id="age" name="age" class="form-control" type="number">
+        </div>
+        <div class="form-group">
+            <label for="special_power">Special Power</label>
+            <input id="special_power" name="special_power" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+            <label for="weakness">Weakness</label>
+            <input id="weakness" name="weakness" class="form=control" type="text">
+        </div>
+
+        <button type="submit" class="btn btn-block">Create Hero</button>
+    </form>
+{{/partial}}
+
+{{> layout.hbs}}

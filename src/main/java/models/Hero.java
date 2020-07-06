@@ -9,7 +9,7 @@ public class Hero {
     private int age;
     private String special_power;
     private String weakness;
-    private static List<Hero> instances = new ArrayList<Hero>();
+    private static List<Hero> heroes = new ArrayList<Hero>();
     private int Id;
 
     public Hero(String name, int age, String special_power, String weakness) {
@@ -17,36 +17,29 @@ public class Hero {
         this.age = age;
         this.special_power = special_power;
         this.weakness = weakness;
-        instances.add(this);
-        Id = instances.size();
+        heroes.add(this);
+        Id = heroes.size();
 
     }
 
     public static List<Hero> all() {
-        return instances;
+        return heroes;
     }
 
     public static void clear() {
-        instances.clear();
+        heroes.clear();
     }
 
     public static Hero find(int id) {
         try{
-            return instances.get(id-1);
+            return heroes.get(id-1);
         } catch (IndexOutOfBoundsException exception) {
             return null;
         }
     }
 
-    public static boolean findHeroByName(String name) {
-        boolean isAvailable = false;
-        for (int i=0; i<instances.size(); i++){
-            if (name.equalsIgnoreCase(instances.get(i).name))
-            {
-                isAvailable = true;
-            }
-        }
-        return isAvailable;
+    public static List<Hero> getHeroes() {
+        return heroes;
     }
 
     public String getName() {
@@ -67,5 +60,9 @@ public class Hero {
 
     public int getId() {
         return Id;
+    }
+
+    public void deleteHero() {
+
     }
 }

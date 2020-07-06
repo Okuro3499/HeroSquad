@@ -1,8 +1,10 @@
 {{#partial "content"}}
 <div class="content">
-    <p>"Heroes aren't Born. They're Built."</p>
+    <br><br>
+    <p><strong>"Heroes aren't Born. They're Built."</strong></p>
 
-    <button class="btn btn-success"><a href="/squadform">BUILD SQUAD</a></button>
+    <br><br>
+    <button style="background-color: black" class="btn btn-success"><a href="/squadform">BUILD SQUAD</a></button>
 </div>
     {{#if squads}}
         {{#each squads}}
@@ -10,7 +12,8 @@
             <p>{{content}} <a href="/squad/{{id}}"></a></p>
         {{/each}}
     {{else}}
-        <p>No Squad</p>
+        <br><br>
+        <p class="text-center"><strong>No Squad</strong></p>
     {{/if}}
 
 {{/partial}}

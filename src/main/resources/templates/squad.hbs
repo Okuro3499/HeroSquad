@@ -1,30 +1,30 @@
 {{#partial "content"}}
-    {{#if squad}}
+    {{#if squads}}
         <h3>Your Squads</h3>
         <table>
             <thead>
-            <tr>
-                <th scope="col">ID</th>
-                <th scope="col">Squad name</th>
-                <th scope="col">Maximum Size</th>
-                <th scope="col">Cause</th>
+            <tr class="cell-spacing">
+                <th scope="col">ID</th>&nbsp;&nbsp;
+                <th scope="col">Squad Name</th>&nbsp;&nbsp;
+                <th scope="col">Max Size</th>&nbsp;&nbsp;
+                <th scope="col">Cause</th>&nbsp;&nbsp;
             </tr>
             </thead>
             <tbody>
-            {{#each squad}}
+            {{#each squads}}
                 <tr>
                     <th scope="row">{{id}}</th>
-                    <td>{{squadName}}</td>
-                    <td>{{maxSize}}</td>
-                    <td>{{cause}}</td>
+                    <td>{{ squadName }}</td>
+                    <td>{{ maxSize }}</td>
+                    <td>{{ cause }}</td>
 
-                    <td><button class="btn btn-info"><a href="Squad/{{id}}/hero/new">Add Hero</a></button></td>
+                    <td><button class="btn btn-info"><a href="squad/{{id}}/hero/new">Add Hero</a></button></td>
                 </tr>
             {{/each}}
             </tbody>
         </table>
         <div>
-            <button class="btn btn-block"><a href="/squad-form">Add Squad</a></button>
+            <button class="btn btn-block btn-secondary"><a href="/squadform">Create new Squad</a></button>
         </div>
     {{else}}
         <div class="alert alert-warning"></div>

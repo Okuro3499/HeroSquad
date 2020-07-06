@@ -4,19 +4,19 @@
     <form action="/squad" method="post">
         <div class="form-group">
             <label for="squadName">Squad Name</label>
-            <input id="squadName" name="squadName" class= "form-control" type="text">
+            <input id="squadName" name="squadName" class= "form-control" type="text" required>
         </div>
         <div class="form-group">
             <label for="maxSize">Max size</label>
-            <input id="maxSize" name="maxSize" class="form-control" type="number">
+            <input id="maxSize" name="maxSize" class="form-control" type="number" required>
         </div>
         <div class="form-group">
             <label for="cause">Cause</label>
-            <input id="cause" name="cause" class="form-control" type="text">
+            <input id="cause" name="cause" class="form-control" type="text" required>
         </div>
 
 
-        <button type="submit" class="btn btn-default">Create Squad</button>
+        <button type="submit" class="btn btn-block btn-secondary">Create Squad</button>
     </form>
 {{/partial}}
 

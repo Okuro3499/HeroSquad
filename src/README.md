@@ -21,6 +21,7 @@
   * HTML
   * CSS
   * Java
+  * Javascript
 
 # Bugs And Errors
 

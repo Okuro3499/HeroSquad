@@ -3,7 +3,7 @@
 * This is an app that allows you to recruit a well-balanced Squad of superheroes with different superpowers for a cause
 
 # Screenshot
-![Alt text](../src/main/resources/public/images/repo.png?raw=true "Screenshot")
+![Alt text](src/main/resources/public/images/repo.png?raw=true "Screenshot")
 
 # Author
   * GIDEON OKURO
